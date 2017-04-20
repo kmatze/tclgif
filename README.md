@@ -2,8 +2,8 @@ tclgif
 =========
 
 - tclgif version 0.6 by ma.ke. 2017-04-20 is a tcl package for windows,
-- based on AnimGifC (animation feature) by Hubert Dryja <hubertdryja@gmail.com>,
-- based on gifsave.c by Sverre H. Huseby <sverrehu@online.no> (see github)
+- based on AnimGifC (animation feature) by Hubert Dryja <hubertdryja@gmail.com> (see github),
+- based on gifsave.c by Sverre H. Huseby <sverrehu@online.no>.
 - tclgif can create animated Gifs from tcl/tk photo images.
 
 **features:**
