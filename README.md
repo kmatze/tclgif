@@ -18,6 +18,7 @@ To compile tclgif you need gcc and the header files of tcl/tk 8.3.x or higher.
 You can use the simple batch file compile_tclgif.bat.
 
 **general working steps in wish (tk shell):**
+
 	0. load tclgif package
 	1. create gif stream
 	2. define colors and default color
