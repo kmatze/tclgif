@@ -40,6 +40,8 @@ commands for informations:
 example tclgif_tcl.tcl
    start wish
    source tclgif.tcl          --> create a simple gif animation as file matze.gif
+   
+![tclgif](/matze.gif)
 
 todo:
    implement a canvas to image feature, so you can use a canvas as animation tool
