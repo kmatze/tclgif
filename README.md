@@ -30,7 +30,7 @@ You can use the simple batch file compile_tclgif.bat.
 	tclgif::new name width height res(bits) pal(bits)
 	tclgif::colput index r g b  --> set color, get r,g,b values
 	tclgif::coldef index        --> set default color, get r,g,b values
-	tclgif::add image delay     --> add image, get frame and udf rgb color list#
+	tclgif::add image delay     --> add image, get frame and udf rgb color list
 	tclgif::close               --> close gif stream, get last frame number
 
 **commands for informations:**
