@@ -27,20 +27,20 @@ You can use the simple batch file compile_tclgif.bat.
 
 **commands for working steps:**
 
-   tclgif::new name width height res(bits) pal(bits)
-   tclgif::colput index r g b  --> set color, get r,g,b values
-   tclgif::coldef index        --> set default color, get r,g,b values
-   tclgif::add image delay     --> add image, get frame and udf rgb color list
-   tclgif::close               --> close gif stream, get last frame number
+	tclgif::new name width height res(bits) pal(bits)
+	tclgif::colput index r g b  --> set color, get r,g,b values
+	tclgif::coldef index        --> set default color, get r,g,b values
+	tclgif::add image delay     --> add image, get frame and udf rgb color list#
+	tclgif::close               --> close gif stream, get last frame number
 
 **commands for informations:**
 
-   tclgif::help                --> get these infos
-   tclgif::info                --> get info about gif stream
-   tclgif::colpal              --> get gif color palette as rgb triple bytes
-   tclgif::coludf              --> get udf color palette as rgb triple bytes
-   tclgif::colget index        --> get r,g,b values of palette entry
-   tclgif::colimg image        --> get image colors as list of rgb triple bytes
+	tclgif::help                --> get these infos
+	tclgif::info                --> get info about gif stream
+	tclgif::colpal              --> get gif color palette as rgb triple bytes
+	tclgif::coludf              --> get udf color palette as rgb triple bytes
+	tclgif::colget index        --> get r,g,b values of palette entry
+	tclgif::colimg image        --> get image colors as list of rgb triple bytes
 
 **example tclgif_tcl.tcl**
 
