@@ -15,9 +15,9 @@ tclgif
 
 **compile:**
 
-	To compile tclgif you need gcc and the header files of tcl/tk 8.3.x or higher.
-	I use gcc 4.8.3 32bit and tclkit 8.40 under Windows 10.
-	You can use the simple batch file compile_tclgif.bat.
+- to compile tclgif you need gcc and the header files of tcl/tk 8.3.x or higher.
+- i use gcc 4.8.3 32bit and tclkit 8.40 under Windows 10.
+- you can use the simple batch file compile_tclgif.bat and change it for you.
 
 **general working steps in wish (tk shell):**
 
