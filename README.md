@@ -1,44 +1,46 @@
 tclgif
 =========
 
-- tclgif version 0.6 by ma.ke. 2017-04-20 is a tcl package for windows,
-- based on AnimGifC (animation feature) by Hubert Dryja <hubertdryja@gmail.com> (see github),
-- based on gifsave.c by Sverre H. Huseby <sverrehu@online.no>.
+- tclgif version 0.8 by ma.ke. 2017-05-08 is a tcl package for windows,
+- based on AnimGifC (animation feature) by Hubert Dryja <hubertdryja@gmail.com>,
+- based on gifsave.c by Sverre H. Huseby <sverrehu@online.no> (see github)
 - tclgif can create animated Gifs from tcl/tk photo images.
 
 **features:**
 
 - standard functions of AnimGifC
-- add a simple standard vga palette of 16 colors
-- add default color
+- add simple standard vga palette of 16 colors
+- add function to define default color
+- add function to get color palette of an image
 
 To compile tclgif you need gcc and the header files of tcl/tk 8.3.x or higher.
+I use gcc 4.8.3 32bit and tclkit 8.40 under Windows 10.
 
 You can use the simple batch file compile_tclgif.bat.
 
 **general working steps in wish (tk shell):**
 
-	0. load tclgif package
 	1. create gif stream
 	2. define colors and default color
-	3. prepare animation
-	4. add images
-	5. close gif stream
+	3. add images (first add starts animation mode)
+	4. close gif stream
 
 **commands for working steps:**
 
-	tclgif::new name width height resolution(bits) palette(bits) --> initialize standard vga palette
-   	tclgif::colput index r g b  --> return r,g,b and decimal color value for setted color
-   	tclgif::coldef index        --> return r,g,b and decimal color value
-   	tclgif::animation           --> return number of start frame
-   	tclgif::add image delay     --> return number of written frame
-   	tclgif::close               --> return number of all written frames
+   tclgif::new name width height res(bits) pal(bits)
+   tclgif::colput index r g b  --> set color, get r,g,b values
+   tclgif::coldef index        --> set default color, get r,g,b values
+   tclgif::add image delay     --> add image, get frame and udf rgb color list
+   tclgif::close               --> close gif stream, get last frame number
 
 **commands for informations:**
 
-   	tclgif::info                --> return info about gif stream
-   	tclgif::colpal              --> return r,g,b and decimal color values of palette
-   	tclgif::colget index        --> return r,g,b and decimal color value of palette entry
+   tclgif::help                --> get these infos
+   tclgif::info                --> get info about gif stream
+   tclgif::colpal              --> get gif color palette as rgb triple bytes
+   tclgif::coludf              --> get udf color palette as rgb triple bytes
+   tclgif::colget index        --> get r,g,b values of palette entry
+   tclgif::colimg image        --> get image colors as list of rgb triple bytes
 
 **example tclgif_tcl.tcl**
 
@@ -56,7 +58,7 @@ TRY IT ;-)
 
 I hope you have fun.
 
-Greetings - kmatze (aka ma.ke.) - 20.04.2017
+Greetings - kmatze (aka ma.ke.) - 08.05.2017
 
 
 

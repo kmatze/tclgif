@@ -13,8 +13,6 @@ tclgif::colput 3 255 255 255
 # default color
 tclgif::coldef 3
 
-tclgif::animation
-
 set i [image create photo -width $w -height $h]
 
 # 1. red
